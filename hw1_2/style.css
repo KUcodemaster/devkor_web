@@ -1,26 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:black;
 }
 
 .container {
-    width: 40%;
-    margin: 0 auto;
-    background-color: #7FDBFF;
-    padding-top: 30px;
+    width: 70%;
+    height: 500px;
+    margin: 5% auto;
+    background-color: gainsboro;
     border-radius: 10px;
 }
 
-.imgbox { 
+.left-box {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.left-box::after {
+    content: "";
+    clear: both;
+}
+
+.left-box-text {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.introduce {
+    text-align: center;
+}
+
+.left-box h1 {
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+}
+
+.contact-box {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.contact-box .contact {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.contact-text {
+    height: 15px;
+    line-height: 15px;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+
+
+
+.right-box {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color: gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.right-box::after {
+    content: "";
+    clear: both;
+}
+
+
+.title-img {
+    display: block; 
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 5%;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
     margin-top: 10%;
-    
 }
+
 
 .imgbox img {
     width: 100%;
@@ -28,25 +111,24 @@ body {
     border-radius: 10px;
 }
 
-h1 {
-    text-align: center;
-}
 
-p {
-    text-align: center;
-}
 
 .gitimg {
     width:50px;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .stack-box {
-    margin: 30px auto;
-    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 30%;
+    height: 80px;
+    border-radius: 5px;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
+    background-color: white;
 }
 
 .stack-box > p {
