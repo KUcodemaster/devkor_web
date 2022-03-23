@@ -9,11 +9,11 @@ body {
 
 a {
     text-decoration: none;
-    color:black;
+    color:#6495ed;
 }
 
 .container {
-    width: 70%;
+    width: 1000px;
     height: 500px;
     margin: 5% auto;
     background-color: gainsboro;
@@ -73,14 +73,12 @@ a {
     letter-spacing: 0.3px;
 }
 
-
-
 .right-box {
     width: 70%;
     height: 100%;
     position: relative;
     float: right;
-    background-color: gray;
+    background-color: lightgray;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -111,8 +109,6 @@ a {
     border-radius: 10px;
 }
 
-
-
 .gitimg {
     width:50px;
     display: block;
@@ -121,12 +117,12 @@ a {
 
 .stack-box {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     left: 50%;
     transform:translateX(-50%);
-    width: 30%;
+    width: 25%;
     height: 80px;
-    border-radius: 5px;
+    border-radius: 25px;
     text-align: center;
     background-color: white;
 }
@@ -137,4 +133,35 @@ a {
 
 .stack-box > img {
     margin: 10px 8px;
+}
+
+.right-text-box {
+    text-align: center;
+}
+
+.right-text-box h3 {
+    margin: 7px 0;
+}
+
+hr {
+    margin: 0 auto;
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+}
+
+.history-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 160px;
+}
+
+li {
+    list-style: none;
 }
