@@ -1,0 +1,66 @@
+body {
+    background-color: whitesmoke;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.kuclass {
+    display: inline-block;
+    margin-left: 20px;
+    width:300px;
+    height: 200px;
+    border: 1.5px solid gainsboro;
+    background-color: white;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.kuclass:hover {
+    cursor: pointer;
+}
+
+.class-info {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+
+.class-id {
+    font-size: 12px;
+}
+
+.class-title {
+    width:280px;
+    height: 40px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.class-info:hover {
+    text-decoration: underline;
+}
+
+.class-professor {
+    position: relative;
+    bottom: 8px;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.kuclass > .btn {
+    float: right;
+    position: relative;
+    bottom: 5px;
+    margin-left: 5px;
+    right: 10px;
+}
+
+.kuclass > .btn::after {
+    content: "";
+    clear: both;
+}
