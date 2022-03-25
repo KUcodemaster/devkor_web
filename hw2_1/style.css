@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
+body {
+    background-color: #eee;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    width: 370px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: white;   
+    padding-left: 40px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+.container p {
+    display: inline-block;
+    margin: 0;
+    margin-top: 7px;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: -0.5px;
+
+}
+
+.namebox {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+input {
+    display: block;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-top:5px;
+}
+
+input[type=email] {
+    width: 300px;
+    padding-left: 15px;
+}
+
+.name {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.text {
+    display: block;
+    width: 300px;
+    height: 100px;
+}
+
+.checkbox {
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.subscribe {
+    font-size: 12px;
+}
+
+label {
+    word-wrap:break-word;
+}
+
+button {
+    margin-left: 123px;
+    border: none;
+    background-color: orange;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    width: 120px;
+    vertical-align: top;
+    display: inline-block;
+}
