@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border-bottom: 8px solid #F0F0F0;
+  overflow: auto;
+}
+
+div > div {
+  float: left;
+  width: 25%;
+  height: 130px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  div > div {
+    width: 50%;
+  }
+
+  .container {
+    border: 5px solid #F0F0F0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div > div {
+    width: 100%;
+  }
+  .container {
+    border-bottom: 5px solid #F0F0F0;
+    border-top: 5px solid #F0F0F0;
+    border-left: none;
+    border-right: none;
+  }
+}
