@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200&family=Roboto+Mono:wght@400;700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  font-family: 'Noto Sans KR';
+}
+
+h1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 500;
+  color: navy;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead td {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: cornflowerblue;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+td {
+  color: steelblue;
+  border-bottom: 1px solid lightsteelblue;
+}
+
+.cart__pic {
+  width: 20%;
+}
+
+.cart__pic img {
+  width: 100%;
+}
+
+.cart__item {
+  width: 35%;
+}
+
+.cart__amount, .cart__price, .cart__total {
+  width: 15%;
+  text-align: center;
+}
+
+td[colspan="5"] {
+  font-size: 24px;
+  padding: 15px;
+  text-align: right;
+  border: none;
+}
+
+.container__bottom {
+  width:100%;
+  padding-top: 30px;
+}
+
+.container__bottom a {
+  color: navy;
+}
+
+.container__bottom button {
+  float: right;
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #000080;
+  color: white;
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.container__bottom button:hover {
+  background-color: #08457e;
+}
+
+.container__bottom button:active {
+  background-color: #0093af;
+}
