@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200&family=Roboto+Mono:wght@400;700&display=swap');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +23,7 @@ table {
   border-radius: 5px;
 }
 
-.bold {
+.font-bold {
   font-weight: bold;
 }
 

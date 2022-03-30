@@ -63,6 +63,7 @@ input[type=email] {
     display: inline-block;
     margin: 0;
     margin-right: 5px;
+    background-color: #eee;
     vertical-align: middle;
 }
 

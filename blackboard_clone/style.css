@@ -1,16 +1,21 @@
 body {
     background-color: whitesmoke;
+    margin: 0;
 }
 
 h3 {
     margin-left: 20px;
 }
 
+.container {
+  margin-left: 50px;
+}
+
 .kuclass {
     display: inline-block;
     margin-left: 20px;
-    width:300px;
-    height: 200px;
+    width: 20%;
+    height: 250px;
     border: 1.5px solid gainsboro;
     background-color: white;
     vertical-align: top;
@@ -19,6 +24,8 @@ h3 {
 
 .kuclass:hover {
     cursor: pointer;
+    box-shadow: 3px 3px 3px gray;
+    transform: scale(1.03);
 }
 
 .class-info {
@@ -63,4 +70,10 @@ h3 {
 .kuclass > .btn::after {
     content: "";
     clear: both;
+}
+
+@media screen and (max-width:1024px) {
+  .kuclass {
+    width: 40%;
+  }
 }
