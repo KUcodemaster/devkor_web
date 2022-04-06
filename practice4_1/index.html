@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="main.css" rel="stylesheet">
+    <title>JS Eventlistener</title>
+  </head>
+  <body>
+    <div class="img-container">
+      <div class="img-hide img-big" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+        <span class="img-msg">hello devkor!</span>
+      </div>
+      <div class="img-hide" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+      </div>
+      <div class="img-hide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');">
+      </div>
+      <div class="img-hide" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');">
+      </div>
+      <div class="img-hide" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+      </div>
+    </div>
+
+      <script>
+        let beforeElem = document.querySelector('.img-hide');
+
+        document.querySelectorAll('.img-hide').forEach(item => {
+          item.addEventListener('click', addBig);
+        })
+
+        function addBig(e) {
+          if (beforeElem) {
+            beforeElem.classList.remove('img-big');
+            beforeElem.innerHTML = '';
+          }
+          beforeElem = e.target;
+          e.target.classList.add('img-big');
+          e.target.innerHTML = `<span class="img-msg">hello devkor!</span>`;
+        }
+      </script>
+  </body>
+</html>

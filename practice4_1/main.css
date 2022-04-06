@@ -1,0 +1,39 @@
+.img-container {
+  width: 80vw;
+  margin: 50px auto 0 auto;
+  height: 80vh;
+  display: flex;
+}
+
+.img-hide {
+  width: 8%;
+  border-radius: 15px;
+  background-position: center;
+  margin-left: 8px;
+}
+
+.img-big {
+  width: 68%;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+}
+
+.img-msg {
+  position: absolute;
+  bottom : 10px;
+  left: 10px;
+  color: white;
+  z-index: 5;
+  font-size: 20px;
+  animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
